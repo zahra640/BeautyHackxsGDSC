@@ -1,10 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Html5Qrcode } from 'html5-qrcode';
 
-// Gemini API key
-const GEMINI_API_KEY = 'AIzaSyBHe62Gwvi6X_tCnI4K_-HpN3bUAQTC3HY';
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
-
 export default function Ingredients() {
   const [barcode, setBarcode] = useState('');
   const [selectedImage, setSelectedImage] = useState(null);
